@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة غير موجودة | شركة خليج جدة لنقل العفش</title>
+    <style>
+        /* إعادة تعيين واستايلات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #2d3748;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.10);
+            padding: 50px 40px;
+            text-align: center;
+            border: 1px solid rgba(0, 115, 230, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* أيقونة 404 كبيرة */
+        .error-icon {
+            font-size: 100px;
+            line-height: 1;
+            margin-bottom: 15px;
+            display: block;
+            color: #e53e3e;
+        }
+
+        /* رقم 404 الرئيسي */
+        .error-code {
+            font-size: 120px;
+            font-weight: 900;
+            color: #1a365d;
+            letter-spacing: -2px;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-shadow: 4px 4px 0 rgba(0, 115, 230, 0.08);
+        }
+
+        /* عناوين النص */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2b6cb0;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .description {
+            font-size: 1.05rem;
+            color: #4a5568;
+            line-height: 1.8;
+            max-width: 550px;
+            margin: 0 auto 30px auto;
+            background: #f7fafc;
+            padding: 18px 25px;
+            border-radius: 16px;
+            border-right: 5px solid #2b6cb0;
+        }
+
+        /* أزرار الإجراءات */
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 34px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            min-width: 180px;
+        }
+
+        .btn-primary {
+            background-color: #2b6cb0;
+            color: white;
+            box-shadow: 0 6px 16px rgba(43, 108, 176, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: #1a4f8b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(43, 108, 176, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #2b6cb0;
+            border: 2px solid #2b6cb0;
+        }
+
+        .btn-outline:hover {
+            background-color: #ebf4ff;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: #edf2f7;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e2e8f0;
+            transform: translateY(-3px);
+        }
+
+        /* روابط سريعة */
+        .quick-links {
+            margin: 20px 0 15px 0;
+            border-top: 2px dashed #e2e8f0;
+            padding-top: 28px;
+        }
+
+        .quick-links p {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .quick-links a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 12px;
+            font-size: 1rem;
+            transition: color 0.2s;
+            display: inline-block;
+        }
+
+        .quick-links a:hover {
+            color: #1a4f8b;
+            text-decoration: underline;
+        }
+
+        /* معلومات الاتصال */
+        .contact-info {
+            background: #f7fafc;
+            padding: 18px 12px;
+            border-radius: 16px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: #4a5568;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px 30px;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-info .label {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .contact-info a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* تذييل بسيط */
+        .footer-note {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #718096;
+            border-top: 1px solid #edf2f7;
+            padding-top: 20px;
+        }
+
+        /* تحسين للشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .error-code {
+                font-size: 80px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                min-width: 140px;
+                padding: 12px 22px;
+                font-size: 0.95rem;
+            }
+
+            .quick-links a {
+                margin: 0 6px;
+                font-size: 0.9rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- أيقونة تعبيرية -->
+        <span class="error-icon">🔍</span>
+
+        <!-- الرقم 404 -->
+        <div class="error-code">404</div>
+
+        <!-- العنوان الرئيسي -->
+        <h1>عذراً! الصفحة غير موجودة</h1>
+
+        <!-- نص فرعي -->
+        <p class="subtitle">يبدو أن الرابط الذي اتبعته قديم أو أن الصفحة قد نُقلت.</p>
+
+        <span><span class="label">⏰</span> خدمة 24 ساعة طوال الأسبوع</span>
+    </div>
+
+    <div class="footer-note">
+        &copy; 2026 شركة خليج جدة لنقل العفش – أكثر من 10 سنوات من الاحترافية والأمان.
+    </div>
+
+    <script src="/assets/js/services.js"></script>
+</body>
+
+</html>

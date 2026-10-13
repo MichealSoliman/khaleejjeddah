@@ -1,0 +1,96 @@
+# ========================================
+# Apache Configuration
+# ========================================
+
+Options -Indexes
+
+# ========================================
+# Force HTTPS & Redirects
+# ========================================
+RewriteEngine On
+
+# Redirect Thin Content
+RewriteRule ^blog/furniture-packing-tips\.html$ /furniture-packing-jeddah/ [R=301,L]
+RewriteRule ^blog/furniture-packing-tips/?$ /furniture-packing-jeddah/ [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ========================================
+# Remove index.html from URL
+# ========================================
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# ========================================
+# Pretty URLs (.html hidden)
+# ========================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+# ========================================
+# Browser Cache
+# ========================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# ========================================
+# GZIP Compression
+# ========================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ========================================
+# Security Headers
+# ========================================
+<IfModule mod_headers.c>
+
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+</IfModule>
+
+# ========================================
+# Disable ETags
+# ========================================
+FileETag None
+
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+# ========================================
+# Custom Error Pages
+# ========================================
+ErrorDocument 404 /404.html
+
+# ========================================
+# Protect Hidden Files
+# ========================================
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

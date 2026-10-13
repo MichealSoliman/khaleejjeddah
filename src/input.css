@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #1e40af;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1e3a8a;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #1e3a8a 100%);
+    }
+
+    .hero-pattern {
+        background: linear-gradient(135deg, #083792 0%, #0a4ab0 50%, #052a6b 100%);
+    }
+
+    .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .sticky-sidebar {
+        position: sticky;
+        top: 20px;
+    }
+
+    .content-section {
+        scroll-margin-top: 100px;
+    }
+
+    .nav-item {
+        transition: all 0.3s ease;
+        border-right: 4px solid transparent;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+        background-color: rgba(245, 158, 11, 0.1);
+        border-right-color: #f59e0b;
+        color: #f59e0b;
+    }
+
+    nav a {
+        text-decoration: none !important;
+    }
+
+    .content-section a:not(.btn):not(.no-link-style) {
+        color: #083792;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: all 0.2s ease;
+    }
+
+    .content-section a:not(.btn):not(.no-link-style):hover {
+        color: #f59e0b;
+    }
+
+    .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+
+    .btn-whatsapp {
+        background: #25d366;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        text-decoration: none !important;
+    }
+
+    .btn-whatsapp:hover {
+        background: #128C7E;
+        transform: scale(1.05);
+    }
+
+    .btn-call {
+        background: #083792;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        text-decoration: none !important;
+    }
+
+    .btn-call:hover {
+        background: #052a6b;
+        transform: scale(1.05);
+    }
+
+    .text-primary-custom {
+        color: #083792;
+    }
+
+    .bg-primary-custom {
+        background-color: #083792;
+    }
+
+    .border-primary-custom {
+        border-color: #083792;
+    }
+
+    .hover\:bg-primary-custom:hover {
+        background-color: #083792;
+    }
+
+    .bg-secondary-custom {
+        background-color: #f59e0b;
+    }
+
+    .text-secondary-custom {
+        color: #f59e0b;
+    }
+
+    .border-secondary-custom {
+        border-color: #f59e0b;
+    }
+
+    .hover\:text-secondary-custom:hover {
+        color: #f59e0b;
+    }
+
+    .gradient-bg-custom {
+        background: linear-gradient(135deg, #fef3c7, #fde68a);
+    }
+
+    .float-call,
+    .float-whatsapp {
+        position: fixed;
+        left: 20px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        z-index: 9999;
+        transition: 0.3s;
+        text-decoration: none !important;
+    }
+
+    .float-call {
+        bottom: 100px;
+        background: #083792;
+        color: #fff;
+    }
+
+    .float-whatsapp {
+        bottom: 30px;
+        background: #25d366;
+        color: #fff;
+    }
+
+    .float-call:hover,
+    .float-whatsapp:hover {
+        transform: scale(1.1);
+    }
+}
