@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./*.html",
-    "./**/*.html",
+    "./!(node_modules)/**/*.html",
+    "./assets/js/**/*.js",
     "./src/**/*.{html,js}",
   ],
   theme: {
