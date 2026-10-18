@@ -49,57 +49,62 @@
   <link rel="stylesheet" href="/dist/output.css">
   <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Blog",
-  "name": "شركة خليج جدة لنقل العفش",
-  "url":"https://khaleejjeddah.com/blog/",
-  "description":"مدونة متخصصة في نشر المقالات والنصائح الخاصة بنقل العفش والتغليف والفك والتركيب والتخزين داخل جدة.",
-  "publisher":{
-    "@type":"MovingCompany",
-    "name": "شركة خليج جدة لنقل العفش",
-    "url":"https://khaleejjeddah.com/",
-    "logo":{
-      "@type":"ImageObject",
-      "url":"https://khaleejjeddah.com/assets/img/logo.webp"
-    }
-  },
-  "inLanguage":"ar",
-  "image":"https://khaleejjeddah.com/assets/img/logo.webp"
-}
-</script>
-  <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type":"ListItem",
-      "position":1,
-      "name":"الرئيسية",
-      "item":"https://khaleejjeddah.com/"
+      "@type": "MovingCompany",
+      "@id": "https://khaleejjeddah.com/#organization",
+      "name": "شركة خليج جدة لنقل العفش",
+      "url": "https://khaleejjeddah.com/",
+      "telephone": "+966558601888",
+      "priceRange": "SAR 250 - SAR 2500",
+      "logo": "https://khaleejjeddah.com/assets/img/logo.webp",
+      "image": "https://khaleejjeddah.com/assets/img/furniture-moving-in-jeddah.webp"
     },
     {
-      "@type":"ListItem",
-      "position":2,
-      "name":"المدونة",
-      "item":"https://khaleejjeddah.com/blog/"
+      "@type": "Blog",
+      "@id": "https://khaleejjeddah.com/blog/#blog",
+      "name": "مدونة شركة خليج جدة لنقل العفش",
+      "url": "https://khaleejjeddah.com/blog/",
+      "description": "مدونة متخصصة في نشر المقالات والنصائح الخاصة بنقل العفش والتغليف والفك والتركيب والتخزين داخل جدة.",
+      "publisher": {
+        "@id": "https://khaleejjeddah.com/#organization"
+      },
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://khaleejjeddah.com/blog/#webpage",
+      "name": "مدونة نقل العفش بجدة | مقالات ودليل شامل — خليج جدة",
+      "url": "https://khaleejjeddah.com/blog/",
+      "description": "مجموعة من المقالات المتخصصة في نقل العفش والتغليف والتخزين وفك وتركيب الأثاث داخل جدة.",
+      "isPartOf": {
+        "@id": "https://khaleejjeddah.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://khaleejjeddah.com/blog/#breadcrumb"
+      },
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://khaleejjeddah.com/blog/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://khaleejjeddah.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "المدونة",
+          "item": "https://khaleejjeddah.com/blog/"
+        }
+      ]
     }
   ]
-}
-</script>
-  <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"CollectionPage",
-  "name": "شركة خليج جدة لنقل العفش",
-  "url":"https://khaleejjeddah.com/blog/",
-  "description":"مجموعة من المقالات المتخصصة في نقل العفش والتغليف والتخزين وفك وتركيب الأثاث داخل جدة.",
-  "isPartOf":{
-    "@type":"WebSite",
-    "name": "شركة خليج جدة لنقل العفش",
-    "url":"https://khaleejjeddah.com/"
-  },
-  "inLanguage":"ar"
 }
 </script>
   <script>

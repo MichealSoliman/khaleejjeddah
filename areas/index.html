@@ -56,36 +56,58 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "دليل أحياء جدة لنقل العفش",
-      "url": "https://khaleejjeddah.com/areas/",
-      "description": "دليل متخصص يغطي خدمات نقل العفش والأثاث في مختلف أحياء مدينة جدة.",
-      "publisher": {
-        "@type": "MovingCompany",
-        "name": "شركة خليج جدة لنقل العفش",
-        "url": "https://khaleejjeddah.com/",
-        "telephone": "0558601888",
-        "logo": "https://khaleejjeddah.com/assets/img/logo.webp"
-      },
-      "inLanguage": "ar"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "الرئيسية",
-          "item": "https://khaleejjeddah.com/"
+          "@type": "MovingCompany",
+          "@id": "https://khaleejjeddah.com/#organization",
+          "name": "شركة خليج جدة لنقل العفش",
+          "url": "https://khaleejjeddah.com/",
+          "telephone": "+966558601888",
+          "priceRange": "SAR 250 - SAR 2500",
+          "logo": "https://khaleejjeddah.com/assets/img/logo.webp",
+          "image": "https://khaleejjeddah.com/assets/img/furniture-moving-in-jeddah.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "حي الصفا",
+            "addressLocality": "جدة",
+            "addressRegion": "منطقة مكة المكرمة",
+            "addressCountry": "SA"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "أحياء جدة",
-          "item": "https://khaleejjeddah.com/areas/"
+          "@type": "CollectionPage",
+          "@id": "https://khaleejjeddah.com/areas/#webpage",
+          "name": "دليل أحياء جدة لنقل العفش | خليج جدة",
+          "url": "https://khaleejjeddah.com/areas/",
+          "description": "دليل متخصص يغطي خدمات نقل العفش والأثاث في مختلف أحياء مدينة جدة.",
+          "isPartOf": {
+            "@id": "https://khaleejjeddah.com/#website"
+          },
+          "publisher": {
+            "@id": "https://khaleejjeddah.com/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://khaleejjeddah.com/areas/#breadcrumb"
+          },
+          "inLanguage": "ar"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://khaleejjeddah.com/areas/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "الرئيسية",
+              "item": "https://khaleejjeddah.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "أحياء جدة",
+              "item": "https://khaleejjeddah.com/areas/"
+            }
+          ]
         }
       ]
     }
