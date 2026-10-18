@@ -28,5 +28,16 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'hidden',
+    'rotate-180',
+    'opacity-0',
+    'opacity-100',
+    'invisible',
+    'visible',
+    'md:top-0',
+    'md:top-auto',
+    'active',
+  ],
   plugins: [],
 }
