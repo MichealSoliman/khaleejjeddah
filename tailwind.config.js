@@ -23,8 +23,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        cairo: ['Cairo', 'sans-serif'],
-        tajawal: ['Tajawal', 'sans-serif'],
+        cairo: ['Cairo', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Cairo', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },
