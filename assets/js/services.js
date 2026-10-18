@@ -1,4 +1,5 @@
 const servicesList = [
+    { name: "جميع خدمات نقل العفش", url: "/services/" },
     { name: "نقل عفش بجدة", url: "/furniture-moving-in-jeddah/" },
     { name: "تغليف العفش", url: "/furniture-packing-jeddah/" },
     { name: "فك وتركيب الأثاث", url: "/furniture-assembly-jeddah/" },
@@ -7,7 +8,7 @@ const servicesList = [
     { name: "نقل الأجهزة الكهربائية", url: "/electrical-appliances-moving-jeddah/" },
     { name: "نقل غرف النوم بجدة", url: "/bedroom-moving-jeddah/" },
     { name: "نقل المطابخ بجدة", url: "/kitchen-moving-jeddah/" },
-    { name: "دينا نقل عفش بجدة ", url: "/furniture-moving-truck-in-jeddah/" }
+    { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

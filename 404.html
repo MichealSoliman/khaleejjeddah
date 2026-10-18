@@ -246,6 +246,13 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .float-call, .float-whatsapp { position: fixed; left: 20px; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 9999; transition: 0.3s; text-decoration: none !important; }
+        .float-call { bottom: 100px; background: #083792; color: #fff; }
+        .float-whatsapp { bottom: 30px; background: #25d366; color: #fff; }
+        .float-call:hover, .float-whatsapp:hover { transform: scale(1.1); }
+    </style>
 </head>
 
 <body>
@@ -272,6 +279,10 @@
     </div>
 
     <script src="/assets/js/services.js" defer></script>
+    <!-- Floating Action Buttons -->
+    <a href="tel:0558601888" class="float-call" aria-label="اتصال مباشر"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/966558601888" target="_blank" rel="noopener noreferrer" class="float-whatsapp" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+
 </body>
 
 </html>

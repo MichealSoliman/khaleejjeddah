@@ -88,24 +88,7 @@
             overflow: hidden;
             transition: max-height 0.35s ease-out;
         }
-        /* Mobile Floating Contact Buttons */
-        .floating-action-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            border-top: 1px solid #e2e8f0;
-            padding: 10px 16px;
-            display: flex;
-            gap: 12px;
-            z-index: 40;
-            box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
-        }
-        @media (min-width: 768px) {
-            .floating-action-bar { display: none; }
-        }
+
     </style>
 
     <!-- Structured Data: JSON-LD Schema (LocalBusiness / MovingCompany, WebSite, WebPage, FAQPage) -->
@@ -321,6 +304,7 @@
                             <i class="fas fa-chevron-down text-xs text-gray-400 group-hover:rotate-180 transition-transform"></i>
                         </button>
                         <ul id="desktop-services-dropdown" class="absolute right-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2.5">
+                            <li><a href="/services/" class="block px-4 py-2.5 text-primary bg-blue-50/70 font-extrabold border-b border-gray-100"><i class="fas fa-layer-group text-secondary ml-1.5 text-xs"></i> جميع خدمات نقل العفش</a></li>
                             <li><a href="/furniture-moving-in-jeddah/" class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-primary transition font-bold">نقل عفش بجدة</a></li>
                             <li><a href="/furniture-packing-jeddah/" class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-primary transition">تغليف العفش بجدة</a></li>
                             <li><a href="/furniture-assembly-jeddah/" class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-primary transition">فك وتركيب الأثاث بجدة</a></li>
@@ -379,6 +363,7 @@
                         <i id="mobile-services-icon" class="fas fa-chevron-down text-xs text-gray-400 transition-transform"></i>
                     </button>
                     <ul id="mobile-services-dropdown" class="hidden pr-4 pl-2 py-2 space-y-1.5 text-sm font-semibold text-gray-600 bg-gray-50 rounded-xl mt-1">
+                        <li><a href="/services/" class="block py-2 px-2 text-primary bg-blue-50 font-extrabold rounded-lg mb-1"><i class="fas fa-layer-group text-secondary ml-1 text-xs"></i> جميع خدمات نقل العفش</a></li>
                         <li><a href="/furniture-moving-in-jeddah/" class="block py-2 px-2 hover:text-primary font-bold">نقل عفش بجدة</a></li>
                         <li><a href="/furniture-packing-jeddah/" class="block py-2 px-2 hover:text-primary">تغليف العفش بجدة</a></li>
                         <li><a href="/furniture-assembly-jeddah/" class="block py-2 px-2 hover:text-primary">فك وتركيب الأثاث بجدة</a></li>
@@ -789,6 +774,14 @@
                         </div>
                     </article>
 
+                </div>
+
+                <!-- Services Hub CTA Button -->
+                <div class="mt-12 text-center">
+                    <a href="/services/" class="inline-flex items-center gap-3 bg-primary hover:bg-blue-900 text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition text-base group">
+                        <span>استكشف دليل جميع خدمات نقل العفش بجدة</span>
+                        <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1550,17 +1543,9 @@
     <div id="site-footer"></div>
     <script src="/assets/js/footer.js" defer></script>
 
-    <!-- Fixed Floating Mobile CTA Bar -->
-    <div class="floating-action-bar">
-        <a href="tel:0558601888" class="flex-1 bg-primary text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-sm" aria-label="اتصال هاتفي بشركة خليج جدة">
-            <i class="fas fa-phone-alt"></i>
-            <span>اتصل الآن</span>
-        </a>
-        <a href="https://wa.me/966558601888" target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-500 text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-sm" aria-label="تواصل واتساب مع خليج جدة">
-            <i class="fab fa-whatsapp text-sm"></i>
-            <span>تواصل عبر واتساب</span>
-        </a>
-    </div>
+    <!-- Floating Action Buttons -->
+    <a href="tel:0558601888" class="float-call" aria-label="اتصال مباشر"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/966558601888" target="_blank" rel="noopener noreferrer" class="float-whatsapp" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
 
     <!-- Scripts: Existing and Core JS -->
     <script src="/assets/js/main.js" defer></script>
