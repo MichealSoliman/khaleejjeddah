@@ -8,7 +8,8 @@ const servicesList = [
     { name: "نقل الأجهزة الكهربائية", url: "/electrical-appliances-moving-jeddah/" },
     { name: "نقل غرف النوم بجدة", url: "/bedroom-moving-jeddah/" },
     { name: "نقل المطابخ بجدة", url: "/kitchen-moving-jeddah/" },
-    { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" }
+    { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" },
+    { name: "أسعار نقل العفش بجدة", url: "/furniture-moving-prices-in-jeddah/" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
