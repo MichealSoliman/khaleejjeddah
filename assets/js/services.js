@@ -9,6 +9,8 @@ const servicesList = [
     { name: "نقل غرف النوم بجدة", url: "/bedroom-moving-jeddah/" },
     { name: "نقل المطابخ بجدة", url: "/kitchen-moving-jeddah/" },
     { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" },
+    { name: "نقل عفش شقق بجدة", url: "/apartment-furniture-moving-jeddah/" },
+    { name: "نقل عفش فلل بجدة", url: "/villa-furniture-moving-jeddah/" },
     { name: "أسعار نقل العفش بجدة", url: "/furniture-moving-prices-in-jeddah/" }
 ];
 

@@ -186,6 +186,26 @@
             color: #1e293b;
         }
 
+        .page-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        @media (min-width: 1024px) {
+            .page-layout {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .page-main {
+                width: 67%;
+                flex: 0 0 67%;
+            }
+            .page-sidebar {
+                width: 33%;
+                flex: 0 0 33%;
+            }
+        }
+
         .hero-pattern {
             background: linear-gradient(135deg, #083792 0%, #0d47a1 50%, #1565c0 100%);
         }
@@ -501,10 +521,10 @@
 
     <!-- Main Content Area -->
     <main class="container mx-auto px-4 max-w-6xl py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="page-layout">
             
-            <!-- Article Body (8 cols) -->
-            <article class="lg:col-span-8 bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-gray-100 blog-content">
+            <!-- Article Body -->
+            <article class="page-main bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-gray-100 blog-content">
                 
                 <!-- Quick Table of Contents -->
                 <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl mb-8">
@@ -735,8 +755,8 @@
 
             </article>
 
-            <!-- Sidebar (4 cols) -->
-            <aside class="lg:col-span-4 space-y-6">
+            <!-- Sidebar -->
+            <aside class="page-sidebar space-y-6">
                 
                 <!-- Quick Contact Card -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 text-center sticky-sidebar">
