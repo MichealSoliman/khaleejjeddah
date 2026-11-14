@@ -10,8 +10,9 @@ const ROOT = path.resolve(__dirname, '..');
 const BS = String.fromCharCode(92); // backslash
 const css = fs.readFileSync(path.join(ROOT, 'dist/output.css'), 'utf8') +
     fs.readFileSync(path.join(ROOT, 'dist/custom.css'), 'utf8');
-const SPECIAL = new Set(':/[].%#(),!&>+~=*\'"@'.split(''));
-const esc = c => '.' + [...c].map(ch => (SPECIAL.has(ch) ? BS + ch : ch)).join('');
+const SPECIAL = new Set(':/[].%#()!&>+~=*\'"@'.split(''));
+// Tailwind escapes "," as the CSS hex escape "\2c ".
+const esc = c => '.' + [...c].map(ch => (ch === ',' ? BS + '2c ' : SPECIAL.has(ch) ? BS + ch : ch)).join('');
 const IGNORE = /^(fa[srbl]?|fa-.*|fab|fas|far|faq-.*|nav-item|active|no-link-style|content-section|sticky-sidebar|hero-pattern|gradient-bg-custom|btn-.*|float-.*|card-service|trust-badge-card|group|peer)$/;
 
 let missing = 0;
