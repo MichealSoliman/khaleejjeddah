@@ -109,6 +109,11 @@ for (const file of files) {
         if (m[1].startsWith(ORIGIN) && !resolveInternal(m[1].slice(ORIGIN.length))) err(rel, `missing social image ${m[1]}`);
     }
 
+    // --- inline JavaScript must parse
+    for (const m of h.matchAll(/<script(?![^>]*(?:src=|application\/ld\+json))[^>]*>([\s\S]*?)<\/script>/gi)) {
+        try { new Function(m[1]); } catch (e) { err(rel, 'inline <script> syntax error: ' + e.message); }
+    }
+
     // --- JSON-LD
     const text = strip(body);
     for (const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi)) {

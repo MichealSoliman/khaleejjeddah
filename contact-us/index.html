@@ -486,15 +486,14 @@
             var err = document.getElementById("contact-form-error");
             if (!v("name") || !v("phone")) { if (err) err.classList.remove("hidden"); return; }
             if (err) err.classList.add("hidden");
-            var text = "مرحباً، أرغب في طلب خدمة من خليج جدة لنقل العفش.
-"
-                + "الاسم: " + v("name") + "
-"
-                + "الجوال: " + v("phone") + "
-"
-                + "الخدمة: " + v("service") + "
-"
-                + (v("message") ? "التفاصيل: " + v("message") : "");
+            var lines = [
+                "مرحباً، أرغب في طلب خدمة من خليج جدة لنقل العفش.",
+                "الاسم: " + v("name"),
+                "الجوال: " + v("phone"),
+                "الخدمة: " + v("service")
+            ];
+            if (v("message")) lines.push("التفاصيل: " + v("message"));
+            var text = lines.join(String.fromCharCode(10));
             window.open("https://wa.me/966558601888?text=" + encodeURIComponent(text), "_blank", "noopener");
         });
     })();
