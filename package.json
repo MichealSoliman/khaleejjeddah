@@ -7,7 +7,9 @@
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build:partials": "node scripts/build-partials.js",
-    "test:seo": "node scripts/seo-check.js"
+    "test:seo": "node scripts/seo-check.js",
+    "build:icons": "node scripts/build-fa-subset.js",
+    "build:sitemaps": "node scripts/build-sitemaps.js"
   },
   "keywords": [],
   "author": "",
