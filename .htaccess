@@ -93,6 +93,12 @@ RewriteRule ^([^/.]+)$ $1.html [L]
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 
+    # footer.html is an HTML fragment (no <title>, no <head>) kept only as the
+    # source for scripts/build-partials.js and as a JS fallback — keep it out of the index.
+    <Files "footer.html">
+        Header set X-Robots-Tag "noindex, follow"
+    </Files>
+
 </IfModule>
 
 # ========================================

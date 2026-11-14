@@ -23,6 +23,8 @@
     function initFooter() {
         var container = document.getElementById('site-footer');
         if (!container) return;
+        // Footer is pre-rendered in static HTML by scripts/build-partials.js; fetch only as a fallback.
+        if (container.children.length > 0) return;
 
         var relativePath = getRelativeRoot() + 'footer.html';
         var candidates = ['/footer.html', relativePath, 'footer.html'];

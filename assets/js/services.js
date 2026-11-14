@@ -1,16 +1,17 @@
+// Fallback only: lists are pre-rendered by scripts/build-partials.js (keep in sync).
 const servicesList = [
     { name: "جميع خدمات نقل العفش", url: "/services/" },
-    { name: "نقل عفش بجدة", url: "/furniture-moving-in-jeddah/" },
-    { name: "تغليف العفش", url: "/furniture-packing-jeddah/" },
-    { name: "فك وتركيب الأثاث", url: "/furniture-assembly-jeddah/" },
-    { name: "تخزين الأثاث", url: "/furniture-storage-in-jeddah/" },
-    { name: "نقل المكاتب والشركات", url: "/office-and-company-moving-jeddah/" },
-    { name: "نقل الأجهزة الكهربائية", url: "/electrical-appliances-moving-jeddah/" },
-    { name: "نقل غرف النوم بجدة", url: "/bedroom-moving-jeddah/" },
-    { name: "نقل المطابخ بجدة", url: "/kitchen-moving-jeddah/" },
-    { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" },
+    { name: "نقل الأثاث المنزلي بجدة", url: "/furniture-moving-in-jeddah/" },
     { name: "نقل عفش شقق بجدة", url: "/apartment-furniture-moving-jeddah/" },
     { name: "نقل عفش فلل بجدة", url: "/villa-furniture-moving-jeddah/" },
+    { name: "تغليف العفش بجدة", url: "/furniture-packing-jeddah/" },
+    { name: "فك وتركيب الأثاث بجدة", url: "/furniture-assembly-jeddah/" },
+    { name: "دينا نقل عفش بجدة", url: "/furniture-moving-truck-in-jeddah/" },
+    { name: "نقل غرف النوم بجدة", url: "/bedroom-moving-jeddah/" },
+    { name: "نقل المطابخ بجدة", url: "/kitchen-moving-jeddah/" },
+    { name: "نقل الأجهزة الكهربائية", url: "/electrical-appliances-moving-jeddah/" },
+    { name: "نقل المكاتب والشركات", url: "/office-and-company-moving-jeddah/" },
+    { name: "تخزين الأثاث بجدة", url: "/furniture-storage-in-jeddah/" },
     { name: "أسعار نقل العفش بجدة", url: "/furniture-moving-prices-in-jeddah/" }
 ];
 
