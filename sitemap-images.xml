@@ -15,6 +15,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-bawadi/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/office-furniture-ready-to-move.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://khaleejjeddah.com/areas/furniture-moving-al-hamdaniyah/</loc>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
@@ -30,6 +39,15 @@
     </image:image>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-naseem/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/transportation-of-electrical-appliances.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -75,6 +93,24 @@
     </image:image>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-north-jeddah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-moving-in-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/stretch-wrapped-sofa.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-south-jeddah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing-in-jeddah.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -135,6 +171,42 @@
     </image:image>
   </url>
   <url>
+    <loc>https://khaleejjeddah.com/cities/furniture-moving-jeddah-to-dammam/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/office-furniture-ready-to-move.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/cities/furniture-moving-jeddah-to-madinah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/wrapped-outdoor-chairs-and-table.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/cities/furniture-moving-jeddah-to-makkah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/cities/furniture-moving-jeddah-to-riyadh/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/cities/furniture-moving-jeddah-to-taif/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/stretch-wrapped-sofa.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/cities/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://khaleejjeddah.com/electrical-appliances-moving-jeddah/</loc>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/transportation-of-electrical-appliances.webp</image:loc>
@@ -173,7 +245,7 @@
   <url>
     <loc>https://khaleejjeddah.com/furniture-storage-in-jeddah/</loc>
     <image:image>
-      <image:loc>https://khaleejjeddah.com/assets/img/furniture-storage-in-jeddah.webp</image:loc>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
     </image:image>
   </url>
   <url>

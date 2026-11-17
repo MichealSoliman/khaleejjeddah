@@ -22,6 +22,7 @@ module.exports = {
     "./office-and-company-moving-jeddah/**/*.html",
     "./apartment-furniture-moving-jeddah/**/*.html",
     "./villa-furniture-moving-jeddah/**/*.html",
+    "./cities/**/*.html",
     "./assets/js/**/*.js",
     "./src/**/*.{html,js}",
   ],

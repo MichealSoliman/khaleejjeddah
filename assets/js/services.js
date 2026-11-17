@@ -12,6 +12,7 @@ const servicesList = [
     { name: "نقل الأجهزة الكهربائية", url: "/electrical-appliances-moving-jeddah/" },
     { name: "نقل المكاتب والشركات", url: "/office-and-company-moving-jeddah/" },
     { name: "تخزين الأثاث بجدة", url: "/furniture-storage-in-jeddah/" },
+    { name: "النقل من جدة إلى المدن", url: "/cities/" },
     { name: "أسعار نقل العفش بجدة", url: "/furniture-moving-prices-in-jeddah/" }
 ];
 

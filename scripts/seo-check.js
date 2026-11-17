@@ -164,7 +164,8 @@ const shingles = u => {
     const w = strip(pages[u].body.replace(/<footer[\s\S]*?<\/footer>/gi, '').replace(/<nav[\s\S]*?<\/nav>/gi, '')).replace(/[^؀-ۿ0-9 ]/g, ' ').split(/\s+/).filter(Boolean);
     const s = new Set(); for (let i = 0; i + 5 <= w.length; i++) s.add(w.slice(i, i + 5).join(' ')); return s;
 };
-const areaUrls = Object.keys(pages).filter(u => /^\/areas\/.+/.test(u));
+// neighbourhood pages + intercity route pages must not be near-duplicates of each other
+const areaUrls = Object.keys(pages).filter(u => /^\/(areas|cities)\/.+/.test(u));
 const sh = Object.fromEntries(areaUrls.map(u => [u, shingles(u)]));
 let maxSim = 0;
 for (let i = 0; i < areaUrls.length; i++) for (let j = i + 1; j < areaUrls.length; j++) {
