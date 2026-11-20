@@ -5,6 +5,14 @@
 Options -Indexes
 
 # ========================================
+# Block development files (reports, build scripts, dependencies)
+# These must never be publicly readable. Returned as 404 so they also drop out of search indexes.
+# ========================================
+RedirectMatch 404 (?i)\.md$
+RedirectMatch 404 ^/(scripts|node_modules|src)(/.*)?$
+RedirectMatch 404 ^/(package\.json|package-lock\.json|postcss\.config\.js|tailwind\.config\.js)$
+
+# ========================================
 # Force HTTPS & Redirects
 # ========================================
 RewriteEngine On
