@@ -15,12 +15,39 @@
     </image:image>
   </url>
   <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-ameer-fawaz/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/stretch-wrapped-sofa.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-dismantling-and-assembly-in-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-balad/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://khaleejjeddah.com/areas/furniture-moving-al-bawadi/</loc>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/office-furniture-ready-to-move.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-faisaliyah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/office-furniture-ready-to-move.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -33,12 +60,48 @@
     </image:image>
   </url>
   <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-jamiah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-khalidiyah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing-in-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://khaleejjeddah.com/areas/furniture-moving-al-marwah/</loc>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-storage-in-jeddah.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-muhammadiyah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/transportation-of-electrical-appliances.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-naeem/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/stretch-wrapped-chairs-ready-to-load.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -69,7 +132,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://khaleejjeddah.com/areas/furniture-moving-al-zahra/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/packed-boxes-and-wrapped-furniture.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://khaleejjeddah.com/areas/furniture-moving-hayu-abhar-alshamalia/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/wrapped-outdoor-chairs-and-table.webp</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing-al-salamah-jeddah.webp</image:loc>
     </image:image>
@@ -80,10 +155,7 @@
       <image:loc>https://khaleejjeddah.com/assets/img/furniture-moving-in-jeddah.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://khaleejjeddah.com/assets/img/furniture-packing-al-salamah-jeddah.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+      <image:loc>https://khaleejjeddah.com/assets/img/stretch-wrapped-chairs-ready-to-load.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -168,6 +240,18 @@
     <loc>https://khaleejjeddah.com/blog/intercity-furniture-moving-from-jeddah/</loc>
     <image:image>
       <image:loc>https://khaleejjeddah.com/assets/img/wrapped-outdoor-chairs-and-table.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/blog/rented-apartment-handover-after-moving/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-disassembly-al-salamah-jeddah.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://khaleejjeddah.com/blog/summer-furniture-moving-jeddah/</loc>
+    <image:image>
+      <image:loc>https://khaleejjeddah.com/assets/img/furniture-stretch-wrapped-jeddah.webp</image:loc>
     </image:image>
   </url>
   <url>

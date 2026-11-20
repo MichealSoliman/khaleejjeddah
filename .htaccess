@@ -8,14 +8,15 @@ Options -Indexes
 # Block development files (reports, build scripts, dependencies)
 # These must never be publicly readable. Returned as 404 so they also drop out of search indexes.
 # ========================================
-RedirectMatch 404 (?i)\.md$
-RedirectMatch 404 ^/(scripts|node_modules|src)(/.*)?$
-RedirectMatch 404 ^/(package\.json|package-lock\.json|postcss\.config\.js|tailwind\.config\.js)$
-
+# (mod_rewrite is used because the host runs LiteSpeed, which fully supports it)
 # ========================================
 # Force HTTPS & Redirects
 # ========================================
 RewriteEngine On
+
+RewriteRule \.md$ - [NC,R=404,L]
+RewriteRule ^(scripts|node_modules|src)(/|$) - [NC,R=404,L]
+RewriteRule ^(package\.json|package-lock\.json|postcss\.config\.js|tailwind\.config\.js)$ - [NC,R=404,L]
 
 # Redirect Thin Content
 RewriteRule ^blog/furniture-packing-tips\.html$ /furniture-packing-jeddah/ [R=301,L]
