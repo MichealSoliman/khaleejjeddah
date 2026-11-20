@@ -215,3 +215,13 @@
         transform: scale(1.1);
     }
 }
+/* ========================================
+   Responsive side gutters (site-wide)
+   Content never touches the screen edges; gutters grow with screen size.
+   Placed outside @layer so it wins over per-element px-4.
+   ======================================== */
+.container { padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 640px)  { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+@media (min-width: 1024px) { .container { padding-left: 2rem; padding-right: 2rem; } }
+@media (min-width: 1280px) { .container:not([class*="max-w-"]) { max-width: 1200px; } }
+@media (min-width: 1536px) { .container:not([class*="max-w-"]) { max-width: 1280px; } }
